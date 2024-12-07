@@ -1,0 +1,20 @@
+.card {
+  background-color: #cf934c;
+  width: 362px;
+  height: 280px;
+  border-radius: 16px;
+  padding: 10px 26px;
+
+  &__plan {
+    font-size: 32px;
+  }
+
+  &__plan span {
+    font-weight: bold;
+  }
+
+  &__price {
+    font-size: 42px;
+    font-weight: bold;
+  }
+}
