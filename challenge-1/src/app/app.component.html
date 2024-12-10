@@ -1,1 +1,2 @@
 <app-card [planType]="planType" [planPrice]="planPrice"></app-card>
+<app-input (inputType)="planType = $event" (inputPrice)="planPrice = $event"></app-input>

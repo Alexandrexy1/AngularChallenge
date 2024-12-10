@@ -1,5 +1,5 @@
 <div class="card">
   <p class="card__plan">Plano <span>{{ planType }}</span></p>
   <p class="card__price">R$ {{ planPrice }},00/Mês</p>
-  <app-button-card></app-button-card>
+  <app-button-card (buttonClickEmitter)="buttonClicked($event)"></app-button-card>
 </div>
