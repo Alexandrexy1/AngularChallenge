@@ -1,0 +1,33 @@
+.button {
+  height: 40px;
+  width: 100%;
+  border: 0;
+  border-radius: 16px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+
+  &:active {
+    bottom: -2px;
+  }
+
+  &--gray {
+    background-color: #ccc;
+  }
+
+  &--gray:hover {
+    background-color: #b8b6b6;
+  }
+
+  &--purple {
+    background-color: #a22cda;
+  }
+
+  &--purple:hover {
+    background-color: #8319b4;
+  }
+}
+
+
