@@ -1,4 +1,7 @@
 
-<app-card [buttonText]="buttonText" [buttonStyle]="buttonStyle"></app-card>
-
+<div class="cards-div">
+  <app-card [buttonText]="buttonText" [buttonStyle]="buttonStyle" [cardStyle]="'orange'"></app-card>
+  <app-card [buttonText]="'Adquira já'" [buttonStyle]="'white'" [cardStyle]="'gray'" [style]="{ 'color': '#fff' }"></app-card>
+</div>
 <app-form (buttonStyle)="buttonStyle = $event" (buttonText)="buttonText = $event"></app-form>
+

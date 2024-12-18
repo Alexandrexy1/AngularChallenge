@@ -8,7 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class ButtonComponent {
   @Input({ required: true, alias: "buttonText" }) buttonText: string = '';
-  @Input("buttonStyle") buttonStyle: "white" | "purple" = "white";
+  @Input({ required: true, alias: "buttonStyle" }) buttonStyle: "white" | "purple" = "white";
 
   @Output("clicked") buttonClicked = new EventEmitter<void>();
 

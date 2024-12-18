@@ -12,9 +12,7 @@ export class CardComponent {
   planPrice = 200;
 
   @Input("buttonText") buttonText = "";
-  @Input("buttonStyle") buttonStyle: any = "";
+  @Input({ required: true, alias: "buttonStyle" }) buttonStyle: "white" | "purple" = "white";
 
-  buttonClicked() {
-    console.log("button clicked.")
-  }
+  @Input({ required: true, alias: "cardStyle" }) cardStyle: "orange" | "gray" = "gray";
 }

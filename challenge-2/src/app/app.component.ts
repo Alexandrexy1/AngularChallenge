@@ -9,6 +9,6 @@ import { FormComponent } from './components/form/form.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  buttonStyle = "";
+  buttonStyle: "white" | "purple" = "white";
   buttonText = "";
 }
