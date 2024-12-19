@@ -1,0 +1,15 @@
+<h1>Nome:</h1>
+<input type="text" [(ngModel)]="name">
+<h2>nome digitado: {{ name }}</h2>
+
+<ng-container *ngIf="isGreenyellow; then greenDiv; else isRed"></ng-container>
+
+<ng-template #greenDiv>
+  <div class="my-template"></div>
+</ng-template>
+
+<ng-template #isRed>
+  <div style="background-color: red;" class="my-other-div"></div>
+</ng-template>
+
+<button class="switch-button" (click)="isGreenyellow = !isGreenyellow">Mudar</button>
