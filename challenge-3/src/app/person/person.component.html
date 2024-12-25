@@ -1,0 +1,7 @@
+<div class="item"
+[class.item--odd]="isOdd"
+[class.item--selected]="isSelected"
+(click)="personSelected()">
+    <p class="item__name">{{ personIndex }} -> {{ personName }}</p>
+    <p class="item__age">{{ personAge }} anos</p>
+</div>

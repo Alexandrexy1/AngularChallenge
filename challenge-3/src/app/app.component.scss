@@ -1,24 +1,10 @@
-.my-template {
-  background-color: greenyellow;
-  width: 400px;
-  height: 300px;
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
-.my-other-div {
-  width:300px;
-  height: 300px;
+.my-list {
+  background-color: #0f0f0f;
+  padding: 4px;
 }
 
-.switch-button {
-  font-weight: 600;
-  font-size: 16px;
-  padding: 12px 20px;
-  border: 0;
-  background-color: #ccc;
-  cursor: pointer;
-}
-
-.switch-button:active {
-  position: relative;
-  bottom: -2px;
-}
