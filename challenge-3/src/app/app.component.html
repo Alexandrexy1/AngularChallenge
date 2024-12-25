@@ -1,9 +1,12 @@
-<div class="my-list">
-  <app-person *ngFor="let person of peopleList; let i = index; let isOdd = odd"
-    [personName]="person.name"
-    [personAge]="person.age"
-    [personIndex]="i"
-    [isOdd]="isOdd"
-    [isSelected]="selectedPersonIndex === i"
-    (personSelected)="selectedPerson($event)"></app-person>
-</div>
+<h1 [ngClass]="{
+  'is-red': isRed,
+  'is-big is-green': !isRed,
+}">I am h1!!!</h1>
+
+<button [ngStyle]="{
+  'padding': '8px',
+  'font-weight': '600',
+  'cursor': 'pointer',
+  }"
+  (click)="changeH1Class()"
+  >Change text color</button>

@@ -3,8 +3,14 @@
   margin: 0px;
 }
 
-.my-list {
-  background-color: #0f0f0f;
-  padding: 4px;
+.is-red {
+  background-color: #f00;
 }
 
+.is-green {
+  background-color: #0f0;
+}
+
+.is-big {
+  padding: 44px;
+}
