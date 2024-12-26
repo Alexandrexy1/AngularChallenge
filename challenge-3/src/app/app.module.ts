@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { PersonComponent } from './person/person.component';
+import { AgeClassPipe } from './pipes/age-class.pipe';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { PersonComponent } from './person/person.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AgeClassPipe
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,12 +1,18 @@
 <h1 [ngClass]="{
   'is-red': isRed,
   'is-big is-green': !isRed,
-}">I am h1!!!</h1>
+}">{{ text | uppercase }}</h1>
 
 <button [ngStyle]="{
   'padding': '8px',
   'font-weight': '600',
   'cursor': 'pointer',
-  }"
+}"
   (click)="changeH1Class()"
-  >Change text color</button>
+>Change text color</button>
+
+<p>under 25 years old: red, under 35 years old: blue, under 45 years old: green</p>
+
+<h2 [class]="person.age | ageClass">{{ person | json }}</h2>
+<h2 [class]="person2.age | ageClass">{{ person2 | json }}</h2>
+<h2 [class]="person3.age | ageClass">{{ person3 | json }}</h2>
